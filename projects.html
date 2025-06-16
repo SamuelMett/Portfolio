@@ -5,32 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects - Samuel Mettakadapa</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projects.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">Samuel</div>
+    <a href="index.html" class="logo">Samuel</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <section class="page-section">
-    <h1>My Projects</h1>
+  <div class="projects-container">
+    <h1 class="projects-title">My Projects</h1>
+    <div class="timeline">
+      <div class="timeline-item right">
+        <div class="dot"></div>
+        <div class="content-box">
+          <h2>PaoLarm</h2>
+          <p>An AI-powered alarm system using voice, math, and motion-based challenges.</p>
+          <div class="actions">
+            <a href="https://youtu.be/kNff1YreET4?si=_pumJFYux0Za_uXu" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> Youtube
+            </a>
+            <a href="#" class="read-more" onclick="openModal('pao')">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="dot"></div>
+        <div class="content-box">
+          <h2>CMPS 383 Theater Website</h2>
+          <p>A movie ticket booking system built with React Native and ASP.NET Core.</p>
+          <div class="actions">
+            <a href="https://github.com/Southeastern-Louisiana-University/cmps383-2025-sp-p03-g05" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="read-more" onclick="openModal('theater')">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="dot"></div>
+        <div class="content-box">
+          <h2>CMPS 285 CampusEvents Website</h2>
+          <p>A student engagement web app with real-time chat and event tracking.</p>
+          <div class="actions">
+            <a href="https://github.com/CMPS285-Groups/CMPS285-F24-S02-G04" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="read-more" onclick="openModal('campus')">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div class="project">
+  <!-- Modals -->
+  <div id="modal-pao" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('pao')">&times;</span>
       <h2>PaoLarm</h2>
       <p>An AI-powered alarm system that uses voice recognition, math challenges, and motion detection to ensure users wake up. Built with Python, OpenCV, and Raspberry Pi.</p>
     </div>
-
-    <div class="project">
+  </div>
+  <div id="modal-theater" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('theater')">&times;</span>
       <h2>CMPS 383 Theater Website</h2>
       <p>A responsive web and mobile app that allows users to browse movies, select seats, and purchase tickets. Built with React Native, ASP.NET Core, and Azure SQL.</p>
     </div>
+  </div>
+  <div id="modal-campus" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('campus')">&times;</span>
+      <h2>CMPS 285 CampusEvents Website</h2>
+      <p>Collaborated in a team of five to develop a full-stack web application called Campus Events for a Software Engineering course. The platform was designed to enhance student engagement by centralizing all campus-related events and organization activities into one accessible interface. Users could browse various student organizations, join groups, RSVP to upcoming events, and participate in real-time chat discussions. The frontend was built with React, TypeScript, and Mantine UI. On the backend, we used C#, .NET, and Node.js to handle user registration, event management, and chat functionality. We also implemented features like filtering, membership tracking, and notifications. Git was used for version control, enabling team collaboration and Agile workflows.</p>
+    </div>
+  </div>
 
-    <!-- Add more project blocks as needed -->
-  </section>
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+    }
+    window.onclick = function (event) {
+      document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target === modal) modal.style.display = "none";
+      });
+    }
+  </script>
 </body>
 </html>
