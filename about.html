@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +8,14 @@
   <link rel="stylesheet" href="style.css" /> <!-- Shared styles -->
   <link rel="stylesheet" href="about.css" /> <!-- Page-specific styles -->
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">Samuel</div>
+    <div class="logo">
+      <a href="index.html">Samuel</a>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
@@ -30,14 +34,18 @@
       <h1>About Me</h1>
       <p>
         I'm Samuel Mettakadapa, currently studying Information Technology at Southeastern Louisiana University.
-        I’m passionate about building AI-powered systems, full-stack applications, and bringing creative ideas to life through technology.
+        I’m interested in cybersecurity, full-stack applications, and bringing creative ideas to life
+        through technology.
       </p>
       <p>
-        I love working on projects that solve real-world problems, and I’m always learning new tools and frameworks to improve my craft.
+        I love working on projects that solve real-world problems, and I’m also learning new tools and frameworks to
+        improve my craft.
       </p>
       <p>
-        Outside of tech, I enjoy helping my family/friends, traveling, being part of cool innovations, going to the gym and I love playing pickleball!!!
+        Outside of tech, I enjoy helping my family/friends, traveling, going to the gym,
+        and I love playing pickleball! 
       </p>
+      <p>One fun fact about me is that I’m from India, but I don’t know how to play cricket haha!</p>
     </div>
   </section>
 
@@ -45,11 +53,25 @@
   <section class="gallery-section">
     <h2>My Adventures</h2>
     <div class="gallery">
-      <img src="images/NM.jpg" alt="New Mexico" class="gallery-img" />
-      <img src="images/AZ.jpg" alt="Arizona" class="gallery-img" />
-      <img src="images/TX.jpg" alt="Texas" class="gallery-img" />
+      <div class="gallery-item">
+        <img src="images/NM.jpg" alt="New Mexico" class="gallery-img" />
+        <div class="gallery-caption">Alburqueue, New Mexico</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/AZ.jpg" alt="Arizona" class="gallery-img" />
+        <div class="gallery-caption">Grand Canyon, Arizona</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/TX.jpg" alt="Texas" class="gallery-img" />
+        <div class="gallery-caption">Cadillac Ranch, Texas</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Az1.jpg" alt="Arizona" class="gallery-img">
+        <div class="gallery-caption">Hoover Dam, Arizona</div>
+      </div>
     </div>
   </section>
+  
 
   <!-- LIGHTBOX -->
   <div id="lightbox" class="lightbox">
@@ -82,4 +104,5 @@
   </script>
 
 </body>
+
 </html>

@@ -23,6 +23,19 @@
   <div class="projects-container">
     <h1 class="projects-title">My Projects</h1>
     <div class="timeline">
+      <div class="timeline-item left">
+        <div class="dot"></div>
+        <div class="content-box">
+          <h2>TeaTime Cafe</h2>
+          <p>A personal project inspired by a local Hammond café, this website was built to showcase their menu and story with a clean, user-friendly design.</p>
+          <div class="actions">
+            <a href="https://github.com/SamuelMett/TeaTimeWebsite" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+            <a href="#" class="read-more" onclick="openModal('teatime')">Read More</a>
+          </div>
+        </div>
+      </div>
       <div class="timeline-item right">
         <div class="dot"></div>
         <div class="content-box">
@@ -66,6 +79,13 @@
   </div>
 
   <!-- Modals -->
+   <div id="modal-teatime" class="modal">
+    <div class="modal-content">
+      <span class="close" ondblclick="closeModal('teatime')">&times;</span>
+      <h2>TeaTime</h2>
+      <p> TeaTime Café is a local business based in Hammond, Louisiana. While exploring their website, I noticed that it lacked essential information such as a detailed menu and background about the store, as the site appeared incomplete. This inspired me to take the initiative and create a fully designed and functional TeaTime website as a personal project, aiming to better represent the café's offerings and atmosphere online.</p>
+    </div>
+   </div>
   <div id="modal-pao" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('pao')">&times;</span>
@@ -84,7 +104,7 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal('campus')">&times;</span>
       <h2>CMPS 285 CampusEvents Website</h2>
-      <p>Collaborated in a team of five to develop a full-stack web application called Campus Events for a Software Engineering course. The platform was designed to enhance student engagement by centralizing all campus-related events and organization activities into one accessible interface. Users could browse various student organizations, join groups, RSVP to upcoming events, and participate in real-time chat discussions. The frontend was built with React, TypeScript, and Mantine UI. On the backend, we used C#, .NET, and Node.js to handle user registration, event management, and chat functionality. We also implemented features like filtering, membership tracking, and notifications. Git was used for version control, enabling team collaboration and Agile workflows.</p>
+      <p>Collaborated in a team of five to develop a full-stack web application called Campus Events for a Software Engineering course. The platform was designed to enhance student engagement by centralizing all campus-related events and organization activities into one accessible interface. Users could browse various student organizations, join groups, RSVP to upcoming events, and participate in real-time chat discussions. The frontend was built with React, TypeScript, and Mantine UI. On the backend, we used C#, .NET, and Node.js to handle user registration, event management, and chat functionality. We also implemented features like filtering, tracking, and notifications. Git was used for version control, enabling team collaboration and Agile workflows.</p>
     </div>
   </div>
 
